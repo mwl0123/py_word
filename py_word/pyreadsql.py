@@ -9,11 +9,10 @@ sq_result = re.findall('insert(.*)values|from(.*)where|update(.*)set', sqlFile)
 
 wh_result = re.findall(r'(\w+) = (\w+)', sqlFile)
 
-sq_result = re.findall('(insert.*values)|(select.*)', sqlFile)
+sq_result = re.findall('(select.*)', sqlFile)
 print('start')
 print(sq_result)
-for x in sq_result:
-  print(x[1]) 
+
 
 print('end')
 
